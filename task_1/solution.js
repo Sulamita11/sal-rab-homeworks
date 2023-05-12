@@ -54,7 +54,7 @@ function addInCartSumChange(sum, delta) {
     let newSum;
     newSum = oldSum + difference;
     let newSumText = newSum + " ₽";
-    `newSumText = (косые ковычки)`;
+    newSumText = `${newSum} ₽`;
 
 
 
