@@ -17,10 +17,24 @@ function renderCartItem(item) {
     // например,
     // 5 × 500.00 ₽ = 2500 ₽
     
-    let itemCountText = "";
-    let sum = count * price;
-    itemCountText = `${[itemCountText + count] * [itemCountText + price], [itemCountText + ` ₽`], [itemCountText + sum], [itemCountText + ` ₽`]}`;
     
+    
+        // сформируйте строку itemCountText вида:
+        // количество × цена ₽ = стоимость ₽
+        // например,
+        // 5 × 500.00 ₽ = 2500 ₽
+        
+        let itemCountText = '';
+        itemCountText +=itemCount;
+        itemCountText += '*';
+        itemCountText += itemPrice;
+        itemCountText += ' ₽=';
+        let sum = itemCount*itemPrice;
+        itemCountText += sum;
+        itemCountText += ' ₽';
+
+
+       
 
     
     // 1. Создайте переменную itemCountText, равную пустой строке
